@@ -1,6 +1,6 @@
 {
   "ollama_base_url": "http://localhost:11434/",
-  "ollama_model": "deepseek-r1:14b",
+  "ollama_model": "deepseek-r1:8b",
   "temperature": 0.5,
   "chroma_persist_dir": "./chroma_db",
   "max_context": 1000,
