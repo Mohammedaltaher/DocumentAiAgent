@@ -1,0 +1,27 @@
+{
+  "name": "customer-support-agent",
+  "version": "1.0.0",
+  "description": "Document QA Agent with multi-language support including Arabic",
+  "keywords": [
+    "document-qa",
+    "arabic-support",
+    "multilingual",
+    "customer-support",
+    "langchain",
+    "ollama"
+  ],
+  "scripts": {
+    "start": "python run.py",
+    "start:arabic": "python run_with_arabic.bat",
+    "test": "pytest",
+    "test:arabic": "python tests/arabic_support_test.py"
+  },
+  "dependencies": {
+    "fastapi": "^0.0.8"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Mohamed Eltaher",
+  "license": "MIT"
+}

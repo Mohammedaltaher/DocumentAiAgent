@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en, ar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document QA Agent </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <header class="app-header">
+        <h1><i class="fas fa-book-open"></i> Document QA Agent </h1>
+        <nav>
+            <a href="/static/settings.html" class="nav-link"><i class="fas fa-cog"></i> Settings</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left-panel">
+            <div class="upload-section">
+                <h2><i class="fas fa-cloud-upload-alt"></i> Upload Documents</h2>
+                <form id="upload-form">
+                    <input type="file" id="document-file" accept=".pdf,.txt" required>
+                    <button type="submit"><i class="fas fa-upload"></i> Upload</button>
+                </form>
+                <div id="upload-status"></div>
+            </div>
+
+            <div class="document-list">
+                <h2><i class="fas fa-file-alt"></i> Your Documents</h2>
+                <div id="documents-container">
+                    <p>No documents uploaded yet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <h2><i class="fas fa-comments"></i> Ask Questions</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot-message">
+                        Hello! I'm your document assistant. Upload a document and ask me questions about it.
+                    </div>
+                    <div class="message bot-message rtl-text">
+                        مرحباً! أنا مساعد الوثائق الخاص بك. قم بتحميل مستند واسألني أسئلة حوله.
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="question-input" placeholder="Type your question here... / اكتب سؤالك هنا..."
+                        disabled>
+                    <button id="ask-button" disabled><i class="fas fa-paper-plane"></i> Ask / اسأل</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
